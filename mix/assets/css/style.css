@@ -3144,8 +3144,11 @@ body.loading {
     line-height: 40px;
     color: #FFFFFF;
     margin-bottom: 15px;
+	transition: .2s;
 }
-
+.blog-listing-items-cont h3:hover{
+	color: #00aced;
+}
 .blog-listing-items-cont p {
     font-size: 16px;
     font-weight: 400;
@@ -3246,6 +3249,10 @@ body.loading {
     font-weight: 500;
     line-height: 22px;
     color: #FFFFFF;
+	transition: .2s;
+}
+.single-related-article h4:hover{
+	color: #00aced;
 }
 
 .single-related-article p {
