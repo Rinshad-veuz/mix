@@ -201,17 +201,17 @@ document.addEventListener("DOMContentLoaded", function () {
 // astraunet
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".abt-astr img", {
-  x: 200,
+gsap.to(".abt-astr-ar img", {
+  x: -200,
   ease: "none",
   scrollTrigger: {
-    trigger: ".abt-astr",
+    trigger: ".abt-astr-ar",
     start: "top bottom",
     end: "bottom top",
     scrub: true,
   }
 });
-gsap.to(".abt-astr img", {
+gsap.to(".abt-astr-ar img", {
   y: -20,
   duration: 2,
   repeat: -1,
@@ -224,7 +224,7 @@ gsap.to(".abt-astr img", {
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".abt-astr2 img", {
-  x: -200,
+  x: 100,
   ease: "none",
   scrollTrigger: {
     trigger: ".abt-astr2",
@@ -234,7 +234,7 @@ gsap.to(".abt-astr2 img", {
   }
 });
 gsap.to(".abt-astr2 img", {
-  y: -20,
+  y: 20,
   duration: 2,
   repeat: -1,
   yoyo: true,
@@ -406,7 +406,7 @@ tl.from('.loader-logo', {
 // who we are
 gsap.from(".about-content", {
   duration: 1.5,
-  x: 100, // Changed from y: -100 to x: 100 for right side entry
+  x: -100, // Changed from y: -100 to x: 100 for right side entry
   opacity: 0,
   stagger: 0.3,
   scrollTrigger: {
@@ -423,7 +423,7 @@ gsap.from(".about-content", {
 
 gsap.from(".gallery", {
   duration: 1,
-  x: 100,
+  x: -100,
   opacity: 0,
   stagger: 0.3,
   scrollTrigger: {
@@ -519,7 +519,7 @@ gsap.to('.floating-element11', {
 // event 
 gsap.from(".event-head-title", {
   duration: 1,
-  x: -100,
+  x: 100,
   opacity: 0,
   stagger: 0.3,
   scrollTrigger: {
@@ -533,7 +533,7 @@ gsap.from(".event-head-title", {
 });
 gsap.from(".what-we-do-section .mix-btn-out", {
   duration: 1,
-  x: 100,
+  x: -100,
   opacity: 0,
   stagger: 0.3,
   scrollTrigger: {
@@ -617,7 +617,7 @@ gsap.to('.floating-element-222', {
     scrub: 1,
     markers: false
   },
-  x: -window.innerWidth  + 300, // Move left (negative value)
+  x: -window.innerWidth  + 200, // Move left (negative value)
   y: window.innerHeight + 200, // Move down, // Counter-clockwise rotation
   ease: 'none',
   duration: 3
